@@ -1,46 +1,90 @@
-# Getting Started with Create React App
+# Ready Player Me Avatar Animator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time 3D avatar animation system with 45+ professional mocap animations and dynamic lip sync.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-19.0.0-blue)
+![Three.js](https://img.shields.io/badge/Three.js-0.169.0-green)
+![Ready Player Me](https://img.shields.io/badge/Ready%20Player%20Me-SDK-purple)
 
-In the project directory, you can run:
+## 🎮 Features
 
-### `npm start`
+- **45 Real Animations**: Professional motion capture animations from Ready Player Me's library
+- **Dynamic Lip Sync**: Automatic mouth movements for talking animations using blend shapes
+- **Avatar Creation**: Integrated Ready Player Me avatar creator
+- **Real-time Preview**: Instant animation playback with smooth transitions
+- **Position Lock**: Avatars stay in view during animations (no sliding away)
+- **Categories**: Organized animations - Movement, Idle, Emotions, Gestures, Dance
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Quick Start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository:
+```bash
+git clone https://github.com/pathakmukul/ready-player-me-101.git
+cd ready-player-me-101
+```
 
-### `npm test`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Create a `.env` file in the root directory:
+```
+REACT_APP_RPM_API_KEY=your_ready_player_me_api_key
+```
 
-### `npm run build`
+4. Start the development server:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Open [http://localhost:3000](http://localhost:3000)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Animation Library
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Movement (9 animations)
+- Walk, Run, Jump, Jog
+- Strafe Left/Right
+- Walk/Jog Backward
+- Crouch, Fall
 
-### `npm run eject`
+### Idle Variations (7 animations)
+- Multiple idle poses for variety
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Emotions (6 animations)
+- Happy, Sad, Angry
+- Surprised, Think, Confused
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Communication (6 animations)
+- Wave + 5 talking animations with lip sync
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Dance (13 animations)
+- 13 unique dance moves
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🛠️ Tech Stack
 
-## Learn More
+- **React 19** - UI Framework
+- **Three.js** - 3D Graphics
+- **React Three Fiber** - React renderer for Three.js
+- **Ready Player Me SDK** - Avatar system
+- **TypeScript** - Type safety
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Create Avatar**: Click "Create Avatar" to open Ready Player Me creator
+2. **Select Avatar**: Choose from your saved avatars in the left panel
+3. **Play Animations**: Click any animation button to see it in action
+4. **Lip Sync**: Talk animations automatically animate mouth movements
+
+## 🎯 Future Goals
+
+The system is designed for programmatic control - users will be able to describe scenes in natural language, and an LLM will convert them to animation scripts.
+
+## 📄 License
+
+MIT
+
+## 🙏 Credits
+
+- Animations from [Ready Player Me Animation Library](https://github.com/readyplayerme/animation-library)
+- Built with React Three Fiber and Three.js
